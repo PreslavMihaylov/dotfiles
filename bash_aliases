@@ -23,6 +23,8 @@ alias cdr='cd $(git rev-parse --show-toplevel)'
 # change default editors for git & similar cli tools
 export VISUAL=nvim
 export EDITOR=nvim
+# Herdr prefix+e opens scrollback at the bottom without changing normal editor behavior.
+export HERDR_SCROLLBACK_EDITOR='nvim +$'
 export GIT_EDITOR=nvim
 
 alias docker_rmi_all='docker rmi $(docker images -a -q)'
